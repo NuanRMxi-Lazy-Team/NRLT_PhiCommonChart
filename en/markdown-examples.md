@@ -1,6 +1,10 @@
 # Chart File Format Overview
 
 This page provides a detailed introduction to the basic structure and technical specifications of PhiCommonChart chart files.
+::: info Translation Notice
+Thank you SkyDynamic for contributing to the English translation of this document.  
+Some content is translated by AI.
+:::
 
 ## File Packaging Format
 
