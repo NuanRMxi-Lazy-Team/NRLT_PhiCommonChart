@@ -22,16 +22,16 @@
 
 ## 结构规范
 
-| 唯一标识符 |        字段名         |   类型    | 描述            |   默认值    | 加入版本 |
-|:-----:|:------------------:|:-------:|:--------------|:--------:|:----:|
-|   1   |        Name        | string  | 谱面名称          | UnTitled |  1   |
-|   2   |       Author       | string  | 谱师名义          | Unknown  |  1   |
-|   3   | IllustrationAuthor | string  | 插画作者名义        | Unknown  |  1   |
-|   4   |  IllustrationData  | byte[]? | 插画数据          |   null   |  1   |
-|   5   |     SongAuthor     | string  | 歌曲作者名义        | Unknown  |  1   |
-|   6   |     SongOffset     |   int   | 歌曲BPM偏移，单位为毫秒 |    0     |  1   |
-|   7   |      SongData      | byte[]  | 歌曲数据          |    -     |  1   |
-|   8   |       Level        | string  | 谱面难度          | UK  Lv.0 |  1   |
+| 唯一标识符 |        字段名         |   类型    | 描述                  |   默认值    | 加入版本 |
+|:-----:|:------------------:|:-------:|:--------------------|:--------:|:----:|
+|   1   |        Name        | string  | 谱面名称                | UnTitled |  1   |
+|   2   |       Author       | string  | 谱师名义                | Unknown  |  1   |
+|   3   | IllustrationAuthor | string  | 插画作者名义              | Unknown  |  1   |
+|   4   |  IllustrationData  | byte[]? | 插画数据                |   null   |  1   |
+|   5   |     SongAuthor     | string  | 歌曲作者名义              | Unknown  |  1   |
+|   6   |     SongOffset     |   int   | 歌曲与谱面开始时间的偏移, 单位为毫秒 |    0     |  1   |
+|   7   |      SongData      | byte[]  | 歌曲数据                |    -     |  1   |
+|   8   |       Level        | string  | 谱面难度                | UK  Lv.0 |  1   |
 
 ## 行为规范
 
