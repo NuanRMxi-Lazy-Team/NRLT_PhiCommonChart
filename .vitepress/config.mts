@@ -8,7 +8,7 @@ export default defineConfig({
     locales: {
         root: {
             label: '简体中文',
-            lang: 'zh-CN',
+            lang: 'zh-Hans',
             themeConfig: {
                 nav: [
                     {text: '主页', link: '/'},
@@ -46,28 +46,28 @@ export default defineConfig({
             link: '/en/',
             themeConfig: {
                 nav: [
-                    {text: 'Home', link: '/'},
-                    {text: 'examples', link: '/markdown-examples'}
+                    {text: 'Home', link: '/en/'},
+                    {text: 'examples', link: '/en/markdown-examples'}
                 ],
                 sidebar: [
                     {
                         text: 'Quick Start',
                         items: [
-                            {text: 'overview', link: '/markdown-examples'},
+                            {text: 'overview', link: '/en/markdown-examples'},
                         ]
                     },
                     {
                         text: 'structure',
                         items: [
-                            {text: 'Chart root structure', link: '/chart_format/root.md'},
+                            {text: 'Chart root structure', link: '/en/chart_format/root.md'},
                             {
                                 text: `substructure`, items: [
-                                    {text: `Chart information`, link: '/chart_format/chart_info.md'},
-                                    {text: `BPM`, link: '/chart_format/bpm.md'},
-                                    {text: `JudgeLine`, link: '/chart_format/judge_line.md'},
-                                    {text: `Event`, link: '/chart_format/event.md'},
-                                    {text: `Note`, link: '/chart_format/note.md'},
-                                    {text: `Extend features`, link: '/chart_format/extended_layer.md'},
+                                    {text: `Chart information`, link: '/en/chart_format/chart_info.md'},
+                                    {text: `BPM`, link: '/en/chart_format/bpm.md'},
+                                    {text: `JudgeLine`, link: '/en/chart_format/judge_line.md'},
+                                    {text: `Event`, link: '/en/chart_format/event.md'},
+                                    {text: `Note`, link: '/en/chart_format/note.md'},
+                                    {text: `Extend features`, link: '/en/chart_format/extended_layer.md'},
                                 ]
                             }
                         ]
