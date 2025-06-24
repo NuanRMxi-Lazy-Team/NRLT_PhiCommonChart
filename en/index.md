@@ -5,18 +5,20 @@ layout: home
 hero:
   name: "PhiCommonChartDocs"
   text: "PhiFanmade Common Chart Docs"
-  tagline: 兼容，封装，开放
+  tagline: Compatible，Package，Openness and Unification, Non-editable
   actions:
     - theme: brand
-      text: 结构示例
+      text: Structure Example
       link: /markdown-examples
 
 features:
-  - title: 兼容
-    details: 兼容几乎所有RPE特性
-  - title: 封装
-    details: 多个文件封装在同一个文件中
-  - title: 开放
-    details: 开放且统一的行为文档
+  - title: Compatible
+    details: Compatible with almost all RPE features
+  - title: Package
+    details: Packages multiple files into a single file
+  - title: Openness and Unification
+    details: Unified and open documentation
+  - title: Non-editable
+    details: Once converted, it is immutable and non-editable.
 ---
 
