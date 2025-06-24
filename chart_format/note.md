@@ -47,7 +47,7 @@
 
 - 分段解释
 
-## Type
+### Type
 
 - `Type` 字段定义了音符类型，枚举如下：
 
@@ -58,27 +58,27 @@
 | NoteType.Flick | 滑动音符 |  2   |
 | NoteType.Drag  | 拖动音符 |  3   |
 
-## IsFake
+### IsFake
 
 - 本字段定义了音符是否为假音符，假音符不能被打击。
 - 若 `Hold` 音符的本字段为 `true`，则始终显示为未打击状态，反之，在miss后会减小不透明度。
 - 本字段为 `true` 的音符在 `EndBeat` 后会立即消失，没有打击特效，没有打击音效。
 
-## HitSoundData
+### HitSoundData
 
 - 本字段可以存储音符的自定义击打音效数据，通常为 WAV 或 OGG 格式。
 - `HitSoundData` 字段可以为 null，表示没有自定义击打音效。
 - 未被打击的音符不会播放自定义击打音效。
 - 本字段不能和[HitSoundPath](#hitsoundpath)同时使用。
 
-## HitSoundPath
+### HitSoundPath
 
 - 本字段可以存储音符的自定义击打音效相对于谱面根目录的路径，如 `sound/hit.wav` 就是在 `sound` 文件夹下的 `hit.wav` 文件。
 - 本字段可以为 null，表示没有自定义击打音效。
 - 未被打击的音符不会播放自定义击打音效。
 - 本字段不能和[HitSoundData](#hitsounddata)同时使用。
 
-## YOffset
+### YOffset
 
 - 本字段定义了音符相对于判定线中心的 Y 轴偏移，正值表示在判定线上方，负值表示在判定线下方。
 - 本字段可以影响打击特效的位置。
