@@ -1,0 +1,28 @@
+﻿/* 增大所有 vp-doc 内容区域的宽度 */
+.vp-doc {
+  max-width: 10000px !important; /* 设置为 100% 以最大化利用可用空间 */
+  padding: 0 2rem !important; /* 保留一定的左右内边距以提高可读性 */
+}
+
+/* 特别针对 _chart_format_judge_line 类 */
+.vp-doc._chart_format_judge_line {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* 修改内容容器的宽度 */
+.VPDoc .container {
+  max-width: 1000px !important;
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 1000px !important;
+}
+
+/* 调整大屏幕尺寸下的宽度 */
+@media (min-width: 1440px) {
+  .VPDoc .container {
+    max-width: 10000px !important;
+    margin: 0 auto !important;
+  }
+}
