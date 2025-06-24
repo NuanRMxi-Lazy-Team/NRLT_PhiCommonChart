@@ -20,3 +20,15 @@
 |:-----:|:---------:|:-----:|:---------------|:-----:|:----:|
 |   1   |    Bpm    | float | 段落BPM值，单位为 BPM | 120.0 |  1   |
 |   2   | StartBeat | float | BPM开始的拍数       |  0.0  |  1   |
+
+## proto 段落
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+message Bpm {
+   float BpmValue = 1;
+   float StartBeat = 2;
+}
+```

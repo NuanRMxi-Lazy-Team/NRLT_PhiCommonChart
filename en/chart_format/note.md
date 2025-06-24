@@ -82,3 +82,34 @@ Introduction to the fundamental component in chart: Note.
 - Defines the Y-axis offset of the note relative to the center of the judge line.
 - Positive values indicate the note is above the line; negative values indicate below.
 - This field can affect the position of hit effects.
+
+## Proto Paragraph
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+
+message Note {
+   NoteType Type = 1;
+   float XPosition = 2;
+   float YOffset = 3;
+   float StartBeat = 4;
+   float EndBeat = 5;
+   uint32 Alpha = 6;
+   float SpeedMultiplier = 7;
+   float Width = 8;
+   bool IsFake = 9;
+   float VisibleTime = 10;
+   bytes HitSoundData = 11;
+   bool Above = 12;
+   string HitSoundPath = 100;
+}
+
+enum NoteType {
+  Tap = 0;
+  Hold = 1;
+  Flick = 2;
+  Drag = 3;
+}
+```

@@ -39,3 +39,16 @@ Extended components in chart: RPE-compatible extended features.
 - The value of `TextEvents` is a string representing the text content displayed on the judge line. The display position
   is affected by the judge line's `Anchor`.
 - The text content of `TextEvents` can include newline characters `\n` to display multi-line text.
+
+## Proto Paragraph
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+message ExtendedEventLayer {
+   repeated Event_Single ScaleXEvents = 1;
+   repeated Event_Single ScaleYEvents = 2;
+   repeated Event_Array_Byte ColorEvents = 3;
+   repeated Event_String TextEvents = 4;
+}
+```

@@ -34,3 +34,16 @@
 - `TextEvents` 有事件的情况下，应当忽略判定线默认纹理、[判定线自定义纹理](/chart_format/judge_line.md#texturedata) 和 [判定线自定义 GIF 纹理](/chart_format/judge_line.md#isgiftexture) 的显示。
 - `TextEvents` 的值为字符串，表示判定线上的文本内容，文本显示位置受判定线 [Anchor](/chart_format/judge_line.md#anchor) 影响。
 - `TextEvents` 的文本内容可以包含换行符 `\n`，表示多行文本。
+
+## proto 段落
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+message ExtendedEventLayer {
+   repeated Event_Single ScaleXEvents = 1;
+   repeated Event_Single ScaleYEvents = 2;
+   repeated Event_Array_Byte ColorEvents = 3;
+   repeated Event_String TextEvents = 4;
+}
+```

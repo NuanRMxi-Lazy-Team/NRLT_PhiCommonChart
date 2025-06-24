@@ -82,3 +82,34 @@
 
 - 本字段定义了音符相对于判定线中心的 Y 轴偏移，正值表示在判定线上方，负值表示在判定线下方。
 - 本字段可以影响打击特效的位置。
+
+## proto 段落
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+
+message Note {
+   NoteType Type = 1;
+   float XPosition = 2;
+   float YOffset = 3;
+   float StartBeat = 4;
+   float EndBeat = 5;
+   uint32 Alpha = 6;
+   float SpeedMultiplier = 7;
+   float Width = 8;
+   bool IsFake = 9;
+   float VisibleTime = 10;
+   bytes HitSoundData = 11;
+   bool Above = 12;
+   string HitSoundPath = 100;
+}
+
+enum NoteType {
+  Tap = 0;
+  Hold = 1;
+  Flick = 2;
+  Drag = 3;
+}
+```

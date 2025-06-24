@@ -1,0 +1,116 @@
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+enum AttachUi {
+  None = 0;
+  Pause = 1;
+  ComboNumber = 2;
+  ComboText = 3;
+  Score = 4;
+  ProgressBar = 5;
+  Name = 6;
+  Level = 7;
+}
+message Bpm {
+  float BpmValue = 1;
+  float StartBeat = 2;
+}
+message CommonChart {
+  repeated Bpm BpmList = 1;
+  Info ChartInfo = 2;
+  repeated JudgeLine JudgeLines = 3;
+  string PrprExtraJson = 4;
+  map<string, bytes> PrprExtraFiles = 5;
+  bytes PrprUnlockVideoData = 6;
+  string PrprUnlockVideoPath = 100;
+  int32 Version = 10000;
+  int32 CompatLevel = 10001;
+}
+message Event_Array_Byte {
+  float StartBeat = 1;
+  float EndBeat = 2;
+  bytes StartValue = 3;
+  bytes EndValue = 4;
+  float StartTime = 5;
+  float EndTime = 6;
+}
+message Event_Byte {
+  float StartBeat = 1;
+  float EndBeat = 2;
+  uint32 StartValue = 3;
+  uint32 EndValue = 4;
+  float StartTime = 5;
+  float EndTime = 6;
+}
+message Event_Single {
+  float StartBeat = 1;
+  float EndBeat = 2;
+  float StartValue = 3;
+  float EndValue = 4;
+  float StartTime = 5;
+  float EndTime = 6;
+}
+message Event_String {
+  float StartBeat = 1;
+  float EndBeat = 2;
+  string StartValue = 3;
+  string EndValue = 4;
+  float StartTime = 5;
+  float EndTime = 6;
+}
+message ExtendedEventLayer {
+  repeated Event_Single ScaleXEvents = 1;
+  repeated Event_Single ScaleYEvents = 2;
+  repeated Event_Array_Byte ColorEvents = 3;
+  repeated Event_String TextEvents = 4;
+}
+message Info {
+  string Name = 1;
+  string Author = 2;
+  string Level = 3;
+  string IllustrationAuthor = 4;
+  bytes IllustrationData = 5;
+  string SongAuthor = 6;
+  int32 SongOffset = 7;
+  bytes SongData = 8;
+}
+message JudgeLine {
+  bytes TextureData = 1;
+  bool IsGitTexture = 2;
+  repeated Event_Single XMoveEvents = 3;
+  repeated Event_Single YMoveEvents = 4;
+  repeated Event_Single RotateEvents = 5;
+  repeated Event_Byte AlphaEvents = 6;
+  repeated Event_Single SpeedEvents = 7;
+  repeated Note Notes = 8;
+  int32 FatherIndex = 9;
+  bool RotateWithFather = 10;
+  bool IsCover = 11;
+  AttachUi AttachUi = 12;
+  repeated float Anchor = 13 [packed = false];
+  float BpmFactor = 14;
+  int32 ZOrder = 15;
+  ExtendedEventLayer ExtendedEvents = 16;
+  string TexturePath = 100;
+}
+message Note {
+  NoteType Type = 1;
+  float XPosition = 2;
+  float YOffset = 3;
+  float StartBeat = 4;
+  float EndBeat = 5;
+  uint32 Alpha = 6;
+  float SpeedMultiplier = 7;
+  float Width = 8;
+  bool IsFake = 9;
+  float VisibleTime = 10;
+  bytes HitSoundData = 11;
+  bool Above = 12;
+  string HitSoundPath = 100;
+}
+enum NoteType {
+  Tap = 0;
+  Hold = 1;
+  Flick = 2;
+  Drag = 3;
+}

@@ -55,3 +55,6 @@ PhiCommonChart 采用了高效的 `Protocol Buffers` (protobuf) 作为文件封�
 
 ## 承诺
 PhiCommonChart 承诺在未来的版本中保持向后兼容性，永不移除现有字段，永不修改行为规范（除非有误）。
+
+## proto文件
+[点我下载 proto 文件](/common_chart.proto)

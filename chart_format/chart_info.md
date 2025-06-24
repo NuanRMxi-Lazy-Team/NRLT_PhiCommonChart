@@ -40,3 +40,21 @@
 - `SongData` 字段存储歌曲的二进制数据，通常为 MP3 或 OGG 格式。
 - `SongOffset` 字段用于调整歌曲的起始时间，单位为毫秒（ms），可以为负值。
 - `Level` 存储的等级中 `UK` 与 `Lv` 文本之间为两个空格。
+
+## proto 段落
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+message Info {
+   string Name = 1;
+   string Author = 2;
+   string Level = 3;
+   string IllustrationAuthor = 4;
+   bytes IllustrationData = 5;
+   string SongAuthor = 6;
+   int32 SongOffset = 7;
+   bytes SongData = 8;
+}
+```

@@ -33,3 +33,42 @@
 - `Value` 的类型可能是任意的，比如 `ColorEvent`中、`Value` 的类型是 `byte[]`。
 - 我们没有为事件设计缓动，事件的值均为线性变化。
 - `StartTime` 和 `EndTime` 分别表示事件开始和结束时间，单位为毫秒。它们与 `StartBeat` 和 `EndBeat` 同时存在，实际使用时可以根据需要选择。
+
+## proto 段落
+- 因为 T 的类型可能不同，所以我们将事件分为多种类型，分别为 `Event_Array_Byte`、`Event_Byte`、`Event_Single` 和 `Event_String`。
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+message Event_Array_Byte {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   bytes StartValue = 3;
+   bytes EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+message Event_Byte {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   uint32 StartValue = 3;
+   uint32 EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+message Event_Single {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   float StartValue = 3;
+   float EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+message Event_String {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   string StartValue = 3;
+   string EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+```

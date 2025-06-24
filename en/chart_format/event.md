@@ -33,3 +33,43 @@ Introduction to event structure in chart.
 - The type of `Value` can be arbitrary. For example, in `ColorEvent`, the type of `Value` is `byte[]`.
 - No easing functions are designed for events. All values change linearly.
 - `StartTime` and `EndTime` represent the start and end times of the event, respectively, in milliseconds. They coexist with `StartBeat` and `EndBeat`, and can be used as needed.
+
+## Proto Paragraph
+- Because the type of `T` can vary, we define multiple event types: `Event_Array_Byte`, `Event_Byte`, `Event_Single`, and `Event_String`.
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+message Event_Array_Byte {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   bytes StartValue = 3;
+   bytes EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+message Event_Byte {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   uint32 StartValue = 3;
+   uint32 EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+message Event_Single {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   float StartValue = 3;
+   float EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+message Event_String {
+   float StartBeat = 1;
+   float EndBeat = 2;
+   string StartValue = 3;
+   string EndValue = 4;
+   float StartTime = 5;
+   float EndTime = 6;
+}
+```

@@ -236,3 +236,40 @@ public float GetRotateAtTime(int index, float time)
 - Allows specifying an external texture path instead of embedding it.
 - Can be a local path like `Assets/0721.png`, or a URL.
 - Must be null when `TextureData` is used.
+
+## Proto Paragraph
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+message JudgeLine {
+   bytes TextureData = 1;
+   bool IsGitTexture = 2;
+   repeated Event_Single XMoveEvents = 3;
+   repeated Event_Single YMoveEvents = 4;
+   repeated Event_Single RotateEvents = 5;
+   repeated Event_Byte AlphaEvents = 6;
+   repeated Event_Single SpeedEvents = 7;
+   repeated Note Notes = 8;
+   int32 FatherIndex = 9;
+   bool RotateWithFather = 10;
+   bool IsCover = 11;
+   AttachUi AttachUi = 12;
+   repeated float Anchor = 13 [packed = false];
+   float BpmFactor = 14;
+   int32 ZOrder = 15;
+   ExtendedEventLayer ExtendedEvents = 16;
+   string TexturePath = 100;
+}
+enum AttachUi {
+  None = 0;
+  Pause = 1;
+  ComboNumber = 2;
+  ComboText = 3;
+  Score = 4;
+  ProgressBar = 5;
+  Name = 6;
+  Level = 7;
+}
+```

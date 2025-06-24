@@ -242,3 +242,40 @@ public float GetRotateAtTime(int index, float time)
 - 本字段存储判定线纹理相对于谱面文件所在目录的路径，如 `Assets/0721.png` 则表示谱面文件所在目录下的 `Assets` 文件夹中的 `0721.png` 文件。
 - 本字段允许存储 URL 地址，方便了谱面分发网站对谱面的单独分发，其它资源可以靠模拟器自行下载。
 - 在使用本字段时，`TextureData` 字段必须为 null。
+
+## proto 段落
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+message JudgeLine {
+   bytes TextureData = 1;
+   bool IsGitTexture = 2;
+   repeated Event_Single XMoveEvents = 3;
+   repeated Event_Single YMoveEvents = 4;
+   repeated Event_Single RotateEvents = 5;
+   repeated Event_Byte AlphaEvents = 6;
+   repeated Event_Single SpeedEvents = 7;
+   repeated Note Notes = 8;
+   int32 FatherIndex = 9;
+   bool RotateWithFather = 10;
+   bool IsCover = 11;
+   AttachUi AttachUi = 12;
+   repeated float Anchor = 13 [packed = false];
+   float BpmFactor = 14;
+   int32 ZOrder = 15;
+   ExtendedEventLayer ExtendedEvents = 16;
+   string TexturePath = 100;
+}
+enum AttachUi {
+  None = 0;
+  Pause = 1;
+  ComboNumber = 2;
+  ComboText = 3;
+  Score = 4;
+  ProgressBar = 5;
+  Name = 6;
+  Level = 7;
+}
+```

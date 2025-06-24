@@ -11,7 +11,15 @@ This section introduces the root structure definition of a chart file.
 ```json
 {
   "Version": 0,
-  "CompatLevel": 0
+  "CompatLevel": 0,
+  "BpmList": ...,
+  "ChartInfo": ...,
+  "JudgeLines": [],
+  "PrprExtra": null,
+  "PrprExtraFiles": null,
+  "PrprUnlockVideoData": null,
+  "PrprUnlockVideo": null,
+  "PrprUnlockVideoPath": null
 }
 ```
 
@@ -57,5 +65,24 @@ public float BeatTimeToSecond(float beatTime, List<Bpm> bpmList, float bpmFactor
             break;
     }
     return totalTime;
+}
+```
+
+## Proto Paragraph
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+message CommonChart {
+  repeated Bpm BpmList = 1;
+  Info ChartInfo = 2;
+  repeated JudgeLine JudgeLines = 3;
+  string PrprExtraJson = 4;
+  map<string, bytes> PrprExtraFiles = 5;
+  bytes PrprUnlockVideoData = 6;
+  string PrprUnlockVideoPath = 100;
+  int32 Version = 10000;
+  int32 CompatLevel = 10001;
 }
 ```

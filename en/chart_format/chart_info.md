@@ -40,3 +40,21 @@ Introduction to chart basic information.
 - `SongData` stores binary song data, usually in MP3 or OGG format.
 - `SongOffset` adjusts the song's start time in milliseconds. Can be negative.
 - In the `Level` field, `UK` and `Lv` must be separated by two spaces.
+
+## Proto Paragraph
+
+```protobuf
+syntax = "proto3";
+package PhiCommonChart.ChartStructs;
+
+message Info {
+   string Name = 1;
+   string Author = 2;
+   string Level = 3;
+   string IllustrationAuthor = 4;
+   bytes IllustrationData = 5;
+   string SongAuthor = 6;
+   int32 SongOffset = 7;
+   bytes SongData = 8;
+}
+```
