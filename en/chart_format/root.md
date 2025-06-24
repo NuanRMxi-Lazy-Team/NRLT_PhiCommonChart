@@ -17,13 +17,13 @@ This section introduces the root structure definition of a chart file.
 
 ## Structural Specifications
 
-| Unique Identifier | Field Name  | Type                                              | Description                                                                                                    | Default Value | Added Version |
-|:-----------------:|:-----------:|:--------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|:-------------:|:-------------:|
-|       10000       |   Version   | int                                               | Chart version number, starts from 1                                                                            |       1       |       1       |
-|       10001       | CompatLevel | int                                               | Compatibility level of the chart, see [Compatibility System](/markdown-examples.md#compatibility-level-system) |       0       |       1       |
-|         1         |   BpmList   | List<[BPM](/en/chart_format/bpm.md)>              | List of BPMs used in the chart                                                                                 |       -       |       1       |
-|         2         |  ChartInfo  | [ChartInfo](/en/chart_format/chart_info.md)       | Metadata and basic information about the chart                                                                 |       -       |       1       |
-|         3         | JudgeLines  | List<[JudgeLine](/en/chart_format/judge_line.md)> | List of judge lines that make up the chart                                                                     |      []       |       1       |
+| Unique Identifier | Field Name  | Type                                              | Description                                                                                                       | Default Value | Added Version |
+|:-----------------:|:-----------:|:--------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|:-------------:|:-------------:|
+|       10000       |   Version   | int                                               | Chart version number, starts from 1                                                                               |       1       |       1       |
+|       10001       | CompatLevel | int                                               | Compatibility level of the chart, see [Compatibility System](/en/markdown-examples.md#compatibility-level-system) |       0       |       1       |
+|         1         |   BpmList   | List<[BPM](/en/chart_format/bpm.md)>              | List of BPMs used in the chart                                                                                    |       -       |       1       |
+|         2         |  ChartInfo  | [ChartInfo](/en/chart_format/chart_info.md)       | Metadata and basic information about the chart                                                                    |       -       |       1       |
+|         3         | JudgeLines  | List<[JudgeLine](/en/chart_format/judge_line.md)> | List of judge lines that make up the chart                                                                        |      []       |       1       |
 
 ## Behavior Rules
 
