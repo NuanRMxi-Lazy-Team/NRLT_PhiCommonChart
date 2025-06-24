@@ -1,4 +1,5 @@
 ﻿# Judge Line
+
 Introduction to the fundamental component in chart: Judge Line.
 
 ::: info Note
@@ -35,26 +36,26 @@ Introduction to the fundamental component in chart: Judge Line.
 ```
 
 ## Structural Specifications
- 
-| Unique Identifier |    Field Name    |                       Type                       | Description                                                                | Default Value | Compatibility Level | Added Version |
-|:-----------------:|:----------------:|:------------------------------------------------:|:---------------------------------------------------------------------------|:-------------:|:-------------------:|:-------------:|
-|         1         |   TextureData    |                     byte[]?                      | Custom texture data of the judge line. Null means default texture is used. |     null      |          2          |       1       |
-|         2         |   IsGifTexture   |                       bool                       | Whether TextureData is a GIF animation texture.                            |     false     |          3          |       1       |
-|         3         |   XMoveEvents    | List\<[Event](/chart_format/event.md)\<float\>\> | List of X-axis movement events                                             |      []       |          0          |       1       |
-|         4         |   YMoveEvents    | List\<[Event](/chart_format/event.md)\<float\>\> | List of Y-axis movement events                                             |      []       |          0          |       1       |
-|         5         |   RotateEvents   | List\<[Event](/chart_format/event.md)\<float\>\> | List of rotation events                                                    |      []       |          0          |       1       |
-|         6         |   AlphaEvents    |  List\<[Event](/chart_format/event.md)\<int\>\>  | List of opacity (alpha) change events                                      |      []       |        0 ~ 1        |       1       |
-|         7         |   SpeedEvents    | List\<[Event](/chart_format/event.md)\<float\>\> | List of speed change events                                                |      []       |          0          |       1       |
-|         8         |      Notes       |                   List\<Note\>                   | List of notes attached to this judge line                                  |      []       |          0          |       1       |
-|         9         |   FatherIndex    |                       int                        | Index of parent judge line, -1 means no parent                             |      -1       |          1          |       1       |
-|        10         | RotateWithFather |                       bool                       | Whether this line rotates with its parent                                  |     true      |          1          |       1       |
-|        11         |     IsCover      |                       bool                       | Whether this line covers notes behind it                                   |     true      |          1          |       1       |
-|        12         |     AttachUi     |                       enum                       | UI element bound to this judge line                                        | AttachUi.None |          2          |       1       |
-|        13         |      Anchor      |                     float[]                      | Anchor point of the judge line texture                                     |  [0.5, 0.5]   |          2          |       1       |
-|        14         |    BpmFactor     |                      float                       | BPM factor for this judge line                                             |      1.0      |          1          |       1       |
-|        15         |      ZOrder      |                       int                        | Z-order of the judge line (rendering priority)                             |       0       |          1          |       1       |
-|        16         |  ExtendedEvents  |                  ExtendedLayer                   | List of extended events                                                    |      []       |          3          |       1       |
-|        100        |   TexturePath    |                     string?                      | Path to external texture file (for compatibility)                          |     null      |          2          |       1       |
+
+| Unique Identifier |    Field Name    |                        Type                         | Description                                                                | Default Value | Compatibility Level | Added Version |
+|:-----------------:|:----------------:|:---------------------------------------------------:|:---------------------------------------------------------------------------|:-------------:|:-------------------:|:-------------:|
+|         1         |   TextureData    |                       byte[]?                       | Custom texture data of the judge line. Null means default texture is used. |     null      |          2          |       1       |
+|         2         |   IsGifTexture   |                        bool                         | Whether TextureData is a GIF animation texture.                            |     false     |          3          |       1       |
+|         3         |   XMoveEvents    | List\<[Event](/en/chart_format/event.md)\<float\>\> | List of X-axis movement events                                             |      []       |          0          |       1       |
+|         4         |   YMoveEvents    | List\<[Event](/en/chart_format/event.md)\<float\>\> | List of Y-axis movement events                                             |      []       |          0          |       1       |
+|         5         |   RotateEvents   | List\<[Event](/en/chart_format/event.md)\<float\>\> | List of rotation events                                                    |      []       |          0          |       1       |
+|         6         |   AlphaEvents    |  List\<[Event](/en/chart_format/event.md)\<int\>\>  | List of opacity (alpha) change events                                      |      []       |        0 ~ 1        |       1       |
+|         7         |   SpeedEvents    | List\<[Event](/en/chart_format/event.md)\<float\>\> | List of speed change events                                                |      []       |          0          |       1       |
+|         8         |      Notes       |                    List\<Note\>                     | List of notes attached to this judge line                                  |      []       |          0          |       1       |
+|         9         |   FatherIndex    |                         int                         | Index of parent judge line, -1 means no parent                             |      -1       |          1          |       1       |
+|        10         | RotateWithFather |                        bool                         | Whether this line rotates with its parent                                  |     true      |          1          |       1       |
+|        11         |     IsCover      |                        bool                         | Whether this line covers notes behind it                                   |     true      |          1          |       1       |
+|        12         |     AttachUi     |                        enum                         | UI element bound to this judge line                                        | AttachUi.None |          2          |       1       |
+|        13         |      Anchor      |                       float[]                       | Anchor point of the judge line texture                                     |  [0.5, 0.5]   |          2          |       1       |
+|        14         |    BpmFactor     |                        float                        | BPM factor for this judge line                                             |      1.0      |          1          |       1       |
+|        15         |      ZOrder      |                         int                         | Z-order of the judge line (rendering priority)                             |       0       |          1          |       1       |
+|        16         |  ExtendedEvents  |                    ExtendedLayer                    | List of extended events                                                    |      []       |          3          |       1       |
+|        100        |   TexturePath    |                       string?                       | Path to external texture file (for compatibility)                          |     null      |          2          |       1       |
 
 ## Behavior Rules
 
@@ -228,7 +229,7 @@ public float GetRotateAtTime(int index, float time)
 
 ### ExtendedEvents
 
-- See [ExtendedLayer](/chart_format/extended_layer.md)
+- See [ExtendedLayer](/en/chart_format/extended_layer.md)
 
 ### TexturePath
 
