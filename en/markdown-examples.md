@@ -55,3 +55,6 @@ The coordinate system used in this chart format has its origin in the bottom-lef
 PhiCommonChart guarantees backward compatibility in future versions:
 - Existing fields will never be removed
 - Behavioral specifications will never be changed unless there is an error to fix
+
+## Proto File
+[Download the proto file](https://www.nuanr-mxi.com/api/files/download/common_chart.proto)
