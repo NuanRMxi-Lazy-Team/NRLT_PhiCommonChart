@@ -18,12 +18,12 @@ Extended components in chart: RPE-compatible extended features.
 
 ## Structural Specifications
 
-| Unique Identifier |  Field Name  |                     Type                      | Description                   | Default Value | Added Version |
-|:-----------------:|:------------:|:---------------------------------------------:|:------------------------------|:-------------:|:-------------:|
-|         1         | ScaleXEvents | List<[Event](/chart_format/event.md)<float>>  | List of X-axis scaling events |      []       |       1       |
-|         2         | ScaleYEvents | List<[Event](/chart_format/event.md)<float>>  | List of Y-axis scaling events |      []       |       1       |
-|         3         | ColorEvents  | List<[Event](/chart_format/event.md)<byte[]>> | List of color change events   |      []       |       1       |
-|         4         |  TextEvents  | List<[Event](/chart_format/event.md)<string>> | List of text overlay events   |      []       |       1       |
+| Unique Identifier |  Field Name  |                       Type                        | Description                   | Default Value | Added Version |
+|:-----------------:|:------------:|:-------------------------------------------------:|:------------------------------|:-------------:|:-------------:|
+|         1         | ScaleXEvents | List\<[Event](/chart_format/event.md)\<float\>\>  | List of X-axis scaling events |      []       |       1       |
+|         2         | ScaleYEvents | List\<[Event](/chart_format/event.md)\<float\>\>  | List of Y-axis scaling events |      []       |       1       |
+|         3         | ColorEvents  | List\<[Event](/chart_format/event.md)\<byte[]\>\> | List of color change events   |      []       |       1       |
+|         4         |  TextEvents  | List\<[Event](/chart_format/event.md)\<string\>\> | List of text overlay events   |      []       |       1       |
 
 ## Behavior Rules
 
