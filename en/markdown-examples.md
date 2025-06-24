@@ -50,10 +50,6 @@ Even with compatibility level **5**, existing fields must not be removed.
 
 The coordinate system used in this chart format has its origin in the bottom-left corner. The coordinate `(0, 0)` represents the bottom-left of the screen, and `(1, 1)` represents the top-right.
 
-## Time Unit
-
-All time values are expressed in **beats**. Actual time in seconds must be calculated using BPM.
-
 ## Commitment
 
 PhiCommonChart guarantees backward compatibility in future versions:

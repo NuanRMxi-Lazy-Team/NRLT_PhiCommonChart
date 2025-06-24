@@ -2,7 +2,7 @@
 
 Introduction to the fundamental component in chart: Judge Line.
 
-::: info Note
+::: warning Note
 **Compatibility level for each field is specified individually.**
 :::
 

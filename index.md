@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "PhiCommonChartDocs"
   text: "PhiFanmade Common Chart Docs"
-  tagline: 兼容、封装、开放、不可编辑
+  tagline: 兼容、封装、开放
   actions:
     - theme: brand
       text: 结构示例
@@ -18,7 +18,5 @@ features:
     details: 多个文件封装在同一个文件中
   - title: 开放
     details: 开放且统一的行为文档
-  - title: 不可编辑
-    details: 一旦转换，不可修改，不可编辑
 ---
 

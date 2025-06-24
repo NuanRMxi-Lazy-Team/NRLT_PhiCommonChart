@@ -5,7 +5,7 @@ Introduction to chart basic information.
 **All fields on this page have compatibility level 0.**
 :::
 
-## Json Example
+## JSON Example
 
 ```json
 {
@@ -33,11 +33,10 @@ Introduction to chart basic information.
 |         7         |      SongData      | byte[]  | Song Data                                                             |       -       |       1       |
 |         8         |       Level        | string  | Chart Difficulty Level                                                |   UK  Lv.0    |       1       |
 
-## Field Value Specifications
+## Field Behavior Rules
 
 - `IllustrationData` stores binary illustration data, usually in PNG or JPEG format
 - `IllustrationData` can be null, meaning no illustration is provided. A default black image is recommended in this case.
 - `SongData` stores binary song data, usually in MP3 or OGG format.
 - `SongOffset` adjusts the song's start time in milliseconds. Can be negative.
 - In the `Level` field, `UK` and `Lv` must be separated by two spaces.
-  

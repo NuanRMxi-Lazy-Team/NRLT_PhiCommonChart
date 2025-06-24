@@ -5,11 +5,11 @@ layout: home
 hero:
   name: "PhiCommonChartDocs"
   text: "PhiFanmade Common Chart Docs"
-  tagline: Compatible，Package，Openness and Unification, Non-editable
+  tagline: Compatible，Package，Openness and Unification
   actions:
     - theme: brand
       text: Structure Example
-      link: /markdown-examples
+      link: /en/markdown-examples
 
 features:
   - title: Compatible
@@ -18,7 +18,5 @@ features:
     details: Packages multiple files into a single file
   - title: Openness and Unification
     details: Unified and open documentation
-  - title: Non-editable
-    details: Once converted, it is immutable and non-editable.
 ---
 
