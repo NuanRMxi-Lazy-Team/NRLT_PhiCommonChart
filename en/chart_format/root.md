@@ -1,6 +1,6 @@
 # Chart Root Structure
 
-This section introduces the root structure definition of a chart file.
+>This section introduces the root structure definition of a chart file.
 
 ::: warning Note
 **Compatibility level for each field is specified individually.**
