@@ -1,6 +1,6 @@
 ﻿# 譜面根結構
 
-本節介紹譜面文件的根結構定義。
+本節介紹譜面檔案的根結構定義。
 
 ::: warning 注意事項
 **本頁部分兼容等級見字段描述**
@@ -33,7 +33,7 @@
 |   2   |      ChartInfo      |    [ChartInfo](/zh_hant/chart_format/chart_info.md)    | 譜面信息                                                                                                              |  0   |  -   |  1   |
 |   3   |     JudgeLines      | List<[JudgeLine](/zh_hant/chart_format/judge_line.md)> | 判定線列表                                                                                                             |  0   |  []  |  1   |
 |   4   |      PrprExtra      |                    string?                     | PRPR 模擬器擴展，內部存儲的僅為Json，詳見[Phira文檔](https://teamflos.github.io/phira-docs/chart-standard/extra/index.html)         |  4   | null |  1   |
-|   5   |   PrprExtraFiles    |         Dictionary\<string, byte[]\>?          | PRPR 模擬器擴展文件列表，string為文件名，byte[]為文件內容                                                                             |  4   | null |  1   |
+|   5   |   PrprExtraFiles    |         Dictionary\<string, byte[]\>?          | PRPR 模擬器擴展檔案列表，string為檔案名，byte[]為檔案內容                                                                             |  4   | null |  1   |
 |   6   | PrprUnlockVideoData |                    byte[]?                     | PRPR 模擬器解鎖視頻數據，存儲為二進制數據，詳見[Phira文檔](https://teamflos.github.io/phira-docs/chart-standard/unlock_video/index.html) |  4   | null |  1   |
 |  100  |   PrprUnlockVideo   |                    string?                     | PRPR 模擬器解鎖視頻路徑，兼容用字段，不可與 PrprUnlockVideoData 同時使用                                                                 |  4   | null |  1   |
 

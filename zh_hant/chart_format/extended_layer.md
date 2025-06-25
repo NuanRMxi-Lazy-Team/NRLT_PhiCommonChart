@@ -1,6 +1,6 @@
-﻿# 擴展功能
+# 擴展功能
 
-本頁介紹譜面高級組成部分：RPE擴展功能。
+本頁介紹譜面進階組成部分：RPE擴展功能。
 ::: info 提示
 **本頁所有字段兼容等級為 3。**
 :::
@@ -31,7 +31,7 @@
 - `ColorEvents` 有事件的情況下應當忽略 FC/AP 提示器對判定線的染色。
 - `ColorEvents` 的插值需要三個數值同時插值。
 - `TextEvents` 有事件的情況下應當忽略 FC/AP 提示器對判定線的染色。
-- `TextEvents` 有事件的情況下，應當忽略判定線默認紋理、[判定線自定義紋理](/zh_hant/chart_format/judge_line.md#texturedata) 和 [判定線自定義 GIF 紋理](/zh_hant/chart_format/judge_line.md#isgiftexture) 的顯示。
+- `TextEvents` 有事件的情況下，應當忽略判定線默認紋理、[判定線自訂紋理](/zh_hant/chart_format/judge_line.md#texturedata) 和 [判定線自訂 GIF 紋理](/zh_hant/chart_format/judge_line.md#isgiftexture) 的顯示。
 - `TextEvents` 的值為字符串，表示判定線上的文本內容，文本顯示位置受判定線 [Anchor](/zh_hant/chart_format/judge_line.md#anchor) 影響。
 - `TextEvents` 的文本內容可以包含換行符 `\n`，表示多行文本。
 
