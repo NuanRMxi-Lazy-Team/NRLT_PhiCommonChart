@@ -1,6 +1,7 @@
 ﻿# BPM
 
-Introduction to BPM components in a chart.
+>This chapter will introduce to BPM components in a chart.
+
 ::: info Tips
 **All fields on this page have compatibility level 0.**
 :::
