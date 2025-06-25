@@ -1,6 +1,6 @@
 ﻿# Extended Layer
 
-Extended components in chart: RPE-compatible extended features.
+>This chapter will introduce the extended components in chart: RPE-compatible extended features.
 
 ::: info Note
 **All fields on this page have compatibility level 3.**
