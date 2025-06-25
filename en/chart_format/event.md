@@ -1,6 +1,7 @@
 ﻿# Event
 
 >This chapter will introduce to event structure in chart.
+
 ::: info Tips
 **All fields on this page have compatibility level 0.**
 :::
