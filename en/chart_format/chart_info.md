@@ -1,6 +1,7 @@
 ﻿# ChartInfo
 
-Introduction to chart basic information.
+>This chapter will introduce to chart basic information.
+
 ::: info Tips
 **All fields on this page have compatibility level 0.**
 :::
