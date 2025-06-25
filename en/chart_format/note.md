@@ -1,5 +1,5 @@
 ﻿# Note
-Introduction to the fundamental component in chart: Note.
+> This chapter will introduce to the fundamental component in chart: Note.
 
 ::: warning Note
 **Compatibility level for each field is specified individually.**
