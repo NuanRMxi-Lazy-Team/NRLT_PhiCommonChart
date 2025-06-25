@@ -1,6 +1,6 @@
 ﻿# Judge Line
 
-Introduction to the fundamental component in chart: Judge Line.
+> This chapter will introduce to the fundamental component in chart: Judge Line.
 
 ::: warning Note
 **Compatibility level for each field is specified individually.**
