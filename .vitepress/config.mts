@@ -74,6 +74,41 @@ export default defineConfig({
                     }
                 ]
             }
+        },
+        zh_hant: {
+            label: '繁体中文',
+            lang: 'zh-Hant',
+            link: '/zh_hant/',
+            themeConfig: {
+                nav: [
+                    {text: '主頁', link: '/zh_hant/'},
+                    {text: '示例', link: '/zh_hant/markdown-examples'}
+                ],
+                sidebar: [
+                    {
+                        text: '快速開始',
+                        items: [
+                            {text: '概述', link: '/zh_hant/markdown-examples'},
+                        ]
+                    },
+                    {
+                        text: '結構',
+                        items: [
+                            {text: '根結構', link: '/zh_hant/chart_format/root.md'},
+                            {
+                                text: `子結構`, items: [
+                                    {text: `譜面信息`, link: '/zh_hant/chart_format/chart_info.md'},
+                                    {text: `BPM`, link: '/zh_hant/chart_format/bpm.md'},
+                                    {text: `判定線`, link: '/zh_hant/chart_format/judge_line.md'},
+                                    {text: `事件`, link: '/zh_hant/chart_format/event.md'},
+                                    {text: `音符`, link: '/zh_hant/chart_format/note.md'},
+                                    {text: `擴展特性`, link: '/zh_hant/chart_format/extended_layer.md'},
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     },
 
